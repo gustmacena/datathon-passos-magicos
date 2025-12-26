@@ -1,0 +1,71 @@
+--- Insights da Análise Exploratória de Dados (EDA) - Respostas às Perguntas de Negócio ---
+
+1. Adequação do Nível (IAN):
+Estatísticas Descritivas do IAN:
+| ano   | Severamente Defasado (<5.0)   | Moderadamente Defasado (5.0-7.0)   | Adequado (>7.0)   |
+|:------|:------------------------------|:-----------------------------------|:------------------|
+| 2022  | 4.6589                        | 95.3411                            | 0                 |
+| 2023  | 2.53623                       | 97.4638                            | 0                 |
+| 2024  | 0.561798                      | 99.4382                            | 0                 |
+
+2. Desempenho Acadêmico (IDA):
+IDA Médio por Ano:
+|    | ano   | ida     |
+|:---|:------|:--------|
+| 0  | 2023  | 6.66339 |
+| 1  | 2024  | 6.35142 |
+
+IDA Médio por Fase e Ano:
+| ano   | 1A      | 1B      | 1C      | 1D   | 1E     | 1G      | 1H      | 1J   | 1K      | 1L      | 1M      | 1N   | 1P   | 1R      | 2A   | 2B      | 2C      | 2D      | 2G      | 2H      | 2I      | 2K      | 2L      | 2M   | 2N      | 2P      | 2R   | 2U      | 3A      | 3B      | 3C      | 3D      | 3F      | 3G      | 3H      | 3I      | 3K      | 3L      | 3M   | 3N    | 3P      | 3R      | 3U      | 4A      | 4B      | 4C      | 4F      | 4H      | 4L      | 4M      | 4N      | 4R      | 5A      | 5B      | 5C      | 5D      | 5F   | 5G      | 5L      | 5M      | 5N   | 6A      | 6L      | 7A      | 7E    | 8F   | ALFA    | FASE 1   | FASE 2   | FASE 3   | FASE 4   | FASE 5   | FASE 6   | FASE 7   |
+|:------|:--------|:--------|:--------|:-----|:-------|:--------|:--------|:-----|:--------|:--------|:--------|:-----|:-----|:--------|:-----|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:-----|:--------|:--------|:-----|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:-----|:------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:-----|:--------|:--------|:--------|:-----|:--------|:--------|:--------|:------|:-----|:--------|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+| 2023  | nan     | nan     | nan     | nan  | nan    | nan     | nan     | nan  | nan     | nan     | nan     | nan  | nan  | nan     | nan  | nan     | nan     | nan     | nan     | nan     | nan     | nan     | nan     | nan  | nan     | nan     | nan  | nan     | nan     | nan     | nan     | nan     | nan     | nan     | nan     | nan     | nan     | nan     | nan  | nan   | nan     | nan     | nan     | nan     | nan     | nan     | nan     | nan     | nan     | nan     | nan     | nan     | nan     | nan     | nan     | nan     | nan  | nan     | nan     | nan     | nan  | nan     | nan     | nan     | nan   | nan  | 7.42208 | 6.81445  | 6.73668  | 5.74697  | 6.00426  | 5.90462  | 6.80909  | 7.81     |
+| 2024  | 7.57143 | 7.18333 | 7.28571 | 6.6  | 6.3125 | 7.26562 | 5.79167 | 6    | 5.78333 | 7.33333 | 7.98333 | 5.85 | 7    | 6.64286 | 5.5  | 5.13636 | 4.34375 | 7.42857 | 6.05357 | 7.26786 | 7.45455 | 5.85938 | 6.40625 | 6    | 6.09615 | 5.91071 | 6.8  | 6.58333 | 5.07222 | 5.38021 | 6.28889 | 5.61979 | 4.10556 | 4.84444 | 6.12821 | 5.98333 | 6.15625 | 5.47619 | 4.5  | 5.875 | 4.28889 | 4.66667 | 5.72917 | 7.22222 | 5.13725 | 6.55556 | 5.30208 | 7.04167 | 5.03889 | 6.34259 | 5.94444 | 4.61111 | 6.41667 | 6.36667 | 7.94872 | 5.37879 | 6.1  | 5.97222 | 6.14815 | 5.55128 | 7.5  | 6.89103 | 7.59722 | 7.44444 | 5.026 | 8    | 7.32015 | nan      | nan      | nan      | nan      | nan      | nan      | nan      |
+
+3. Engajamento (IEG) vs Desempenho (IDA) e Ponto de Virada (IPV):
+Matriz de Correlação:
+|     | ieg      | ida      | ipv      |
+|:----|:---------|:---------|:---------|
+| ieg | 1        | 0.543253 | 0.558282 |
+| ida | 0.543253 | 1        | 0.557072 |
+| ipv | 0.558282 | 0.557072 | 1        |
+
+4. Autoavaliação (IAA) vs Desempenho (IDA) e Engajamento (IEG):
+Matriz de Correlação:
+|     | iaa      | ida      | ieg      |
+|:----|:---------|:---------|:---------|
+| iaa | 1        | 0.115241 | 0.131324 |
+| ida | 0.115241 | 1        | 0.543253 |
+| ieg | 0.131324 | 0.543253 | 1        |
+
+5. Aspectos Psicossociais (IPS) e Quedas de Desempenho/Engajamento (Lagged):
+Matriz de Correlação: IPS (Ano Anterior) vs IDA/IEG (Ano Atual):
+|          | ips_prev   | ida      | ieg      |
+|:---------|:-----------|:---------|:---------|
+| ips_prev | 1          | 0.181797 | 0.140437 |
+| ida      | 0.181797   | 1        | 0.563286 |
+| ieg      | 0.140437   | 0.563286 | 1        |
+
+6. Aspectos Psicopedagógicos (IPP) vs Defasagem (IAN):
+Correlação entre IPP e IAN: 0.123
+
+7. Influenciadores do Ponto de Virada (IPV):
+Correlação do IPV com Indicadores (IDA, IEG, IPS):
+|     | ipv        |
+|:----|:-----------|
+| ieg | 0.558386   |
+| ida | 0.556875   |
+| ips | -0.0489922 |
+
+8. Multidimensionalidade (INDE):
+Correlação dos Indicadores (IDA, IEG, IPS, IPP) com o Desempenho Global (INDE):
+|     | inde22    |
+|:----|:----------|
+| ieg | 0.471416  |
+| ida | 0.463449  |
+| ipp | 0.357371  |
+| ips | 0.0676283 |
+
+
+
+--- Próximos Passos ---
+Iniciar o desenvolvimento do Modelo Preditivo de Risco Educacional (pergunta 9).

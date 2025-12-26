@@ -1,0 +1,27 @@
+--- Resultados do Modelo Preditivo de Risco de Defasagem ---
+
+Modelo: Regressão Logística (Interpretabilidade)
+Variável Alvo: Risco de Defasagem (1 se IAN < 7.0, 0 caso contrário)
+
+Relatório de Classificação:
+|              | precision   | recall   | f1-score   | support   |
+|:-------------|:------------|:---------|:-----------|:----------|
+| Baixo Risco  | 0.54491     | 0.334559 | 0.414579   | 272       |
+| Alto Risco   | 0.578089    | 0.765432 | 0.658699   | 324       |
+| accuracy     | 0.568792    | 0.568792 | 0.568792   | 0.568792  |
+| macro avg    | 0.561499    | 0.549995 | 0.536639   | 596       |
+| weighted avg | 0.562947    | 0.568792 | 0.547288   | 596       |
+
+AUC Score: 0.6074
+
+Interpretabilidade: Coeficientes do Modelo (Impacto no Risco):
+| Feature   |   Coefficient |
+|:----------|--------------:|
+| ips       |    0.00384387 |
+| ida       |   -0.0469841  |
+| iaa       |   -0.0605674  |
+| ieg       |   -0.108844   |
+| ano       |   -0.142453   |
+| ipp       |   -0.166518   |
+
+Observação: Coeficientes negativos indicam que o aumento da feature DIMINUI o risco de defasagem. Coeficientes positivos AUMENTAM o risco.
