@@ -96,7 +96,7 @@ A aplicação estará disponível em `http://localhost:8501`
 
 ## 🌐 Deploy no Streamlit Cloud
 
-A aplicação está disponível online em: [https://datathon-passos-magicos.streamlit.app](https://datathon-passos-magicos.streamlit.app)
+A aplicação está disponível online em: [https://datathon-ong-fiap.streamlit.app/](https://datathon-ong-fiap.streamlit.app/)
 
 ## 👥 Equipe
 
