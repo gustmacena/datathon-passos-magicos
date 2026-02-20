@@ -42,6 +42,19 @@ datathon-passos-magicos/
 └── README.md                   # Este arquivo
 ```
 
+## 📐 Arquitetura da Solução
+
+A solução foi desenhada seguindo princípios de **Engenharia de Dados** e **MLOps**, garantindo que o fluxo desde o dado bruto até a predição final seja reprodutível e escalável.
+
+![Arquitetura da Solução](notebooks/architecture_diagram.png)
+
+### Pipeline de Dados e Deploy:
+1.  **Camada de Ingestão**: Coleta automática de dados das abas do Excel (2022-2024).
+2.  **Camada de Processamento**: Scripts Python automatizados para limpeza e padronização.
+3.  **Engenharia de Atributos**: Criação de métricas complexas como a **Razão IDA/IEG** para aumentar o poder preditivo.
+4.  **Treinamento**: Pipeline de ML comparativo com seleção automática do melhor modelo (Gradient Boosting).
+5.  **Deploy**: Publicação via **Streamlit Community Cloud**, integrando o repositório GitHub diretamente com a interface web.
+
 ## 🚀 Como Executar Localmente
 
 ### Pré-requisitos
@@ -96,7 +109,7 @@ A aplicação estará disponível em `http://localhost:8501`
 
 ## 🌐 Deploy no Streamlit Cloud
 
-A aplicação está disponível online em: [https://datathon-ong-fiap.streamlit.app/](https://datathon-ong-fiap.streamlit.app/)
+A aplicação está disponível online em: [https://datathon-passos-magicos.streamlit.app/](https://datathon-passos-magicos.streamlit.app/)
 
 ## 👥 Equipe
 
