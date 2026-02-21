@@ -109,7 +109,7 @@ A aplicação estará disponível em `http://localhost:8501`
 
 ## 🌐 Deploy no Streamlit Cloud
 
-A aplicação está disponível online em: [https://datathon-passos-magicos.streamlit.app/](https://datathon-passos-magicos.streamlit.app/)
+A aplicação está disponível online em: [https://datathon-ong-fiap.streamlit.app/](https://datathon-ong-fiap.streamlit.app/)
 
 ## 👥 Equipe
 
@@ -124,7 +124,7 @@ Este projeto foi desenvolvido para fins educacionais como parte do Datathon Pass
 
 - [Associação Passos Mágicos](https://passosmagicos.org.br/)
 - [Repositório GitHub](https://github.com/gustmacena/datathon-passos-magicos)
-- [Aplicação Streamlit](https://datathon-passos-magicos.streamlit.app)
+- [Aplicação Streamlit](https://datathon-ong-fiap.streamlit.app/)
 
 ---
 
