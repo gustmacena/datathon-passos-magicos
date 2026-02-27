@@ -1,4 +1,4 @@
-# FASE 2 — Análise Exploratória de Dados (EDA) Aprofundada e Geração de Insights
+# FASE 2 — Análise Exploratória de Dados (EDA) Aprofundada e Geração de Insights 
 
 ## Objetivo
 
